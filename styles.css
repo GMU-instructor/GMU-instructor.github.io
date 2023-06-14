@@ -1,5 +1,48 @@
-body {
-    margin: 0;
-    background-color: gray;
+h1 {
+    color: orange;
+    background-color: slategray;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+p {
+    margin: 0;
+    text-align: justify;
+    color: slateblue;
+    column-count: 2;
+    column-gap: 60px;
+}
+
+blockquote {
+    text-align: justify;
+    color: slateblue;
+    column-count: 2;
+    column-gap: 60px;
+}
+
+div {
+    border: 2px solid crimson;
+    margin: 5px;
+    padding: 5px;
+}
+
+span {
+    margin: 20px;
+    padding: 20px;
+}
+
+.error {
+    color: red;
+}
+
+ul {
+    border: 5px dashed green;
+}
+
+#username {
+    border: 5px dashed green;
+}
+
+img{
+    max-width: 50%;
 }

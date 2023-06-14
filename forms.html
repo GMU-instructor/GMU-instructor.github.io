@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>My first FORMS page</h1>
+
+    <form>
+        <label for="username">enter username:</label>
+        <input type="text" id="username" name="username" placeholder="username" required> *
+        <br><br>
+        <label for="email">enter email address:</label>
+        <input type="email" id="email" name="email" placeholder="email" required> *
+        <br><br>
+        <label for="password">enter password:</label>
+        <input type="password" id="password" name="password" placeholder="password" required> *
+        <br><br>
+        <p>Select your gender:</p>
+        <input type="radio" name="gender" value="male"> Male <br>
+        <input type="radio" name="gender" value="female"> Female <br>
+        <input type="radio" name="gender" value="other"> Other <br>
+        <br>
+        <label for="question">Security question:</label>
+        <select name="question" id="question">
+            <option value="q1">What is your favorite color?</option>
+            <option value="q2">What is your favorite food?</option>
+            <option value="q3">If you could be a veggie, what kind would you be?</option>
+        </select>
+        <br><br>
+        <label for="answer">Security question answer:</label>
+        <input type="text" id="answer" name="answer" placeholder="your answer">
+        <br><br>
+        <label for="bio">Your bio:</label> <br>
+        <textarea name="bio" id="bio" cols="75" rows="5" placeholder="about you..."></textarea>
+        <br><br>
+        <label for="submit">Submit the form</label>
+        <input type="submit" name="submit" id="submit">
+    </form>
+
+</body>
+
+</html>
