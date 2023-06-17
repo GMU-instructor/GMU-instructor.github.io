@@ -1,48 +1,119 @@
-h1 {
-    color: orange;
-    background-color: slategray;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-p {
+header {
+    font-family: Arial, sans-serif;
     margin: 0;
-    text-align: justify;
-    color: slateblue;
-    column-count: 2;
-    column-gap: 60px;
-}
-
-blockquote {
-    text-align: justify;
-    color: slateblue;
-    column-count: 2;
-    column-gap: 60px;
-}
-
-div {
-    border: 2px solid crimson;
-    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}    
+.top-banner {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color:rgb(2, 50, 2);
+    text-align: left; 
     padding: 5px;
 }
+.column:nth-child(1) { /* targets the first column */
+    min-width: 150px;
+    max-width: 180px;
+    flex-grow: 1;
+    background-color: yellow;
+}
+.column:nth-child(2) { /* targets the second column */
+    flex: 1;
+}
+.column:nth-child(3) { /* targets the third column */
+    flex: 2;
+}   
+.top-banner h1 {
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.top-banner h2 {
+    color: white;
+    margin-bottom: 0%;
+    font-size: smaller;
+}
 
-span {
+.student-poster{
+    display: flex;
+}
+.poster-description {
+    flex:1;
+}
+.poster {
+    flex: 1;
+}
+
+.student-app{
+    display: flex;
+}
+.app-description {
+    flex:1;
+}
+.app {
+    flex: 1;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}    
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+.main-section {
+    width: 100%;
+    flex-grow: 1;
     margin: 20px;
+}
+.side-nav {
+    background-color: #333;
+    color: #fff;
+    min-width: 150px;
+    max-width: 200px;
+    flex-grow: 1;
     padding: 20px;
 }
-
-.error {
-    color: red;
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.side-nav ul li {
+    margin-bottom: 10px;
+    font-size: smaller;
+    color: white;
+}
+.side-nav ul li h2 {
+    text-align: center;
+    color: white;
+}
+.side-nav ul li a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
 }
 
-ul {
-    border: 5px dashed green;
+footer {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}    
+.bottom-banner {
+    height: 20px;
+    width: 100%;
+    background-color:rgb(2, 50, 2);
+    text-align: center; 
+    padding: 10px;
 }
-
-#username {
-    border: 5px dashed green;
-}
-
-img{
-    max-width: 50%;
+.bottom-banner p {
+    margin-top: 0%;
 }
