@@ -3,7 +3,9 @@ header {
     margin: 0;
     display: flex;
     flex-direction: column;
-}    
+}
+
+
 .top-banner {
     display: flex;
     height: 60px;
@@ -11,6 +13,8 @@ header {
     background-color:rgb(2, 50, 2);
     text-align: left; 
     padding: 5px;
+    position: fixed;
+    top: 0;
 }
 .column:nth-child(1) { /* targets the first column */
     min-width: 150px;
@@ -35,27 +39,6 @@ header {
     font-size: smaller;
 }
 
-.student-poster{
-    display: flex;
-}
-.poster-description {
-    flex:1;
-}
-.poster {
-    flex: 1;
-}
-
-.student-app{
-    display: flex;
-}
-.app-description {
-    flex:1;
-}
-.app {
-    flex: 1;
-}
-
-
 
 body {
     font-family: Arial, sans-serif;
@@ -67,18 +50,24 @@ body {
     display: flex;
     flex-grow: 1;
 }
+
 .main-section {
     width: 100%;
     flex-grow: 1;
-    margin: 20px;
+    margin-left: 200px;
+    padding-bottom: 10%;
+    padding-top: 5%;
 }
 .side-nav {
     background-color: #333;
     color: #fff;
     min-width: 150px;
     max-width: 200px;
+    height: 100%;
     flex-grow: 1;
     padding: 20px;
+    position: fixed;
+    top: 0;
 }
 .side-nav ul {
     list-style-type: none;
@@ -100,6 +89,47 @@ body {
     color: white;
     text-decoration: none;
 }
+.student-poster{
+    display: flex;
+}
+.poster-description {
+    flex:1;
+}
+.poster {
+    flex: 1;
+}
+
+.student-app{
+    display: flex;
+}
+.app-description {
+    flex:1;
+}
+.app {
+    flex: 1;
+}
+
+.introduction{
+    display: flex;
+}
+.intro-text {
+    flex:1.5;
+    padding: 30px;
+}
+.intro-form {
+    flex: 1;
+}
+
+.blog-post{
+    display: flex;
+}
+.blog-pic {
+    flex:1;
+}
+.blog-abstract {
+    flex: 2;
+    padding: 30px;
+}
 
 footer {
     font-family: Arial, sans-serif;
@@ -113,7 +143,10 @@ footer {
     background-color:rgb(2, 50, 2);
     text-align: center; 
     padding: 10px;
+    position: fixed;
+    bottom: 0%;
 }
 .bottom-banner p {
     margin-top: 0%;
+    color: white;
 }
